@@ -42,12 +42,12 @@ header .rectangle-black-top {
 }
 
 /* BANNER */
-
 .rectangle-orange {
     background: orange;
-    padding: 10px;
-    flex-grow: 5;
-    font-size: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.5rem;
     font-weight: bold;
     border: 10px solid #ffb300; /* amarillo oscuro */
 }
@@ -104,7 +104,7 @@ header .rectangle-black-top {
     background: #ffd600;
     padding: 10px;
     color: black;
-    text-align: left;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -128,64 +128,36 @@ header .rectangle-black-top {
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+    .rectangle-blue,
+    .rectangle-grey-left,
+    .rectangle-red-right,
+    .content-wrapper-black,
+    .rectangle-yellow-light {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
 
-  .rectangle-blue {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
+    .rectangle-left-red,
+    .rectangle-center-red,
+    .rectangle-right-red {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
 
-  .rectangle-left-red,
-  .rectangle-center-red,
-  .rectangle-right-red {
-    width: 100%;
-    text-align: left;
-    margin: 5px 0;
-  }
+    .rectangle-grey-left,
+    .rectangle-red-right {
+        width: 100%;
+    }
 
-  .content-wrapper-black {
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-  }
+    .content-wrapper-black {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .rectangle-grey-left,
-  .rectangle-red-right {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /*En Columna*/
-  .rectangle-blue-left-top,
-  .rectangle-blue-right-top,
-  .rectangle-blue-left-bottom,
-  .rectangle-blue-right-bottom { 
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .rectangle-blue-light-bottom {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .rectangle-yellow-top,
-  .rectangle-yellow-bottom {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
- 
-  .footer-black {
-    padding: 20px 10px;
-  }
-
-  .rectangle-yellow-light {
-    width: 100%;
-    padding: 15px;
-    margin: 0 auto;
-  }
+    .rectangle-yellow-light {
+        padding: 20px;
+        width: 95%;
+    }
 }
